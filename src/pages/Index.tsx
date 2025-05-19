@@ -1,12 +1,34 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect } from "react";
+import NavBar from "@/components/NavBar";
+import HeroSection from "@/components/HeroSection";
+import TrustSection from "@/components/TrustSection";
+import BenefitCards from "@/components/BenefitCards";
+import GetStartedSteps from "@/components/GetStartedSteps";
+import ServerAccessSection from "@/components/ServerAccessSection";
+import ResourceSection from "@/components/ResourceSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
+  // Update page title
+  useEffect(() => {
+    document.title = "Ev Trades | Get Funded with HyroTrader";
+  }, []);
+  
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="flex flex-col min-h-screen">
+      <NavBar />
+      
+      <main className="flex-grow">
+        <HeroSection />
+        <TrustSection />
+        <BenefitCards />
+        <GetStartedSteps />
+        <ServerAccessSection />
+        <ResourceSection />
+      </main>
+      
+      <Footer />
     </div>
   );
 };
