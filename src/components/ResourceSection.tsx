@@ -3,6 +3,7 @@ import EmailForm from "./EmailForm";
 import { Card } from "@/components/ui/card";
 import { toast } from "sonner";
 import { useRef, useEffect } from "react";
+import { Check } from "lucide-react";
 
 const ResourceSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
