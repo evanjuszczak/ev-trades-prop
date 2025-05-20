@@ -1,6 +1,6 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { useRef, useEffect } from "react";
+import { ArrowRight } from "lucide-react";
 
 const TrustSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -72,14 +72,25 @@ const TrustSection = () => {
           </div>
           
           <div 
-            className="bg-evtrades-grey dark:bg-evtrades-darkgrey rounded-lg overflow-hidden shadow-lg h-auto flex items-center justify-center"
+            className="flex flex-col gap-4"
             ref={el => elementsRef.current[3] = el}
           >
-            <img 
-              src="/lovable-uploads/40b3356d-1de9-41ab-9fe9-2afc009fe2f5.png" 
-              alt="HyroTrader Payout Certificate for Evan Juszczak showing $949 total profit" 
-              className="w-full h-full object-cover"
-            />
+            <div className="bg-evtrades-grey dark:bg-evtrades-darkgrey rounded-lg overflow-hidden shadow-lg h-auto flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/40b3356d-1de9-41ab-9fe9-2afc009fe2f5.png" 
+                alt="HyroTrader Payout Certificate for Evan Juszczak showing $949 total profit" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <a 
+              href="https://www.instagram.com/ev_trades" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-secondary flex items-center justify-center gap-2 text-center w-full md:w-auto md:ml-auto py-2"
+              data-utm-source="instagram"
+            >
+              More Payouts <ArrowRight className="h-4 w-4" />
+            </a>
           </div>
         </div>
       </div>
