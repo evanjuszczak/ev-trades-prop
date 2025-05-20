@@ -39,8 +39,26 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      /* Capture the full URL so GA picks up any utm_* parameters */
-      gtag('config', 'G-GNL1DSVRV5', { page_location: window.location.href });
+      
+      // Check for UTM parameters in the URL and send an event if found
+      const urlParams = new URLSearchParams(window.location.search);
+      const utmSource = urlParams.get('utm_source');
+      
+      /* Configure GA with current URL to ensure UTM params are captured */
+      gtag('config', 'G-GNL1DSVRV5', { 
+        page_location: window.location.href,
+        debug_mode: true
+      });
+      
+      /* Send an explicit event for UTM sources */
+      if (utmSource) {
+        console.log('UTM Source detected:', utmSource);
+        gtag('event', 'utm_visit', {
+          event_category: 'utm_tracking',
+          event_label: utmSource,
+          utm_source: utmSource
+        });
+      }
     </script>
   </head>
 
@@ -59,23 +77,41 @@
      * becomes
      *   https://prop.evtrades.com/?utm_source=tiktok
      */
-    (() => {
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('UTM helper script loaded');
       const BASE = 'https://prop.evtrades.com/';
+      
+      // Process any links with data-utm-source attributes
       document.querySelectorAll('a[data-utm-source]').forEach(a => {
         const src = a.getAttribute('data-utm-source').toLowerCase().trim();
         /* Preserve any hash fragments (#section) already on the href */
         const hash = a.hash || '';
         a.href = `${BASE}?utm_source=${encodeURIComponent(src)}${hash}`;
+        console.log('Updated link with UTM source:', src, a.href);
       });
 
-      /* OPTIONAL: track clicks on CTAs as "generate_lead" */
+      /* Track clicks on UTM-tagged elements */
       document.querySelectorAll('[data-utm-source]').forEach(el => {
-        el.addEventListener('click', () => {
-          if (typeof gtag === 'function')
-            gtag('event', 'generate_lead', { event_category: 'cta', event_label: el.href });
+        el.addEventListener('click', (e) => {
+          const src = el.getAttribute('data-utm-source');
+          console.log('UTM link clicked:', src);
+          
+          if (typeof gtag === 'function') {
+            gtag('event', 'generate_lead', { 
+              event_category: 'cta', 
+              event_label: el.href,
+              utm_source: src
+            });
+          }
         });
       });
-    })();
+      
+      // Debug helper - show any UTM parameters currently in the URL
+      const params = new URLSearchParams(window.location.search);
+      if (params.has('utm_source')) {
+        console.log('Current page loaded with UTM source:', params.get('utm_source'));
+      }
+    });
     </script>
   </body>
 </html>
