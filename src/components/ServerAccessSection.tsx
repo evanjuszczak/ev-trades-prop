@@ -75,7 +75,7 @@ const ServerAccessSection = () => {
               </a>
               
               <a 
-                href="https://discord.gg/evtrades" 
+                href="https://discord.com/invite/KGpnpscewF" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-[#5865F2] hover:bg-[#4752C4] text-white py-3 px-6 rounded-md transition-all duration-300"
