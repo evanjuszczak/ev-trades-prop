@@ -130,11 +130,11 @@
   
   .animated-underline::after {
     content: '';
-    @apply absolute left-0 bottom-0 w-0 h-0.5 bg-evtrades-gold transition-all duration-300 ease-in-out;
+    @apply absolute left-0 bottom-0 w-full h-0.5 bg-evtrades-gold opacity-80 transition-all duration-300 ease-in-out;
   }
   
   .animated-underline:hover::after {
-    @apply w-full;
+    @apply opacity-100 h-[0.175rem];
   }
 }
 
