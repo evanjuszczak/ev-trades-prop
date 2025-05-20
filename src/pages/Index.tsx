@@ -6,7 +6,6 @@ import TrustSection from "@/components/TrustSection";
 import BenefitCards from "@/components/BenefitCards";
 import GetStartedSteps from "@/components/GetStartedSteps";
 import ServerAccessSection from "@/components/ServerAccessSection";
-import ResourceSection from "@/components/ResourceSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -25,7 +24,6 @@ const Index = () => {
         <BenefitCards />
         <GetStartedSteps />
         <ServerAccessSection />
-        <ResourceSection />
       </main>
       
       <Footer />

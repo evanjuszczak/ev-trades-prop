@@ -1,16 +1,11 @@
 
-import EmailForm from "./EmailForm";
 import { toast } from "sonner";
 import { useRef, useEffect } from "react";
+import { X, Discord } from "lucide-react";
 
 const ServerAccessSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const elementsRef = useRef<Array<HTMLElement | null>>([]);
-  
-  const handleSubmit = (email: string) => {
-    // This would typically connect to your backend
-    toast.success("Thanks! We'll send your server invitation shortly.");
-  };
   
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -65,15 +60,30 @@ const ServerAccessSection = () => {
             </h3>
             
             <p className="mb-6 text-white/80">
-              Just DM me or submit your email below once you've purchased using my code.
+              Connect with me once you've purchased using my code. Send me a DM on X or join my Discord server.
             </p>
             
-            <EmailForm 
-              buttonText="Get Invited" 
-              placeholder="Purchased? Enter your email to get invited"
-              onSubmit={handleSubmit}
-              variant="premium"
-            />
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="https://twitter.com/ev_trades" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 bg-black hover:bg-zinc-800 text-white py-3 px-6 rounded-md transition-all duration-300"
+                onClick={() => toast.success("Opening X profile")}
+              >
+                <X className="h-5 w-5" /> Message on X
+              </a>
+              
+              <a 
+                href="https://discord.gg/evtrades" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 bg-[#5865F2] hover:bg-[#4752C4] text-white py-3 px-6 rounded-md transition-all duration-300"
+                onClick={() => toast.success("Opening Discord server")}
+              >
+                <Discord className="h-5 w-5" /> Join Discord Server
+              </a>
+            </div>
           </div>
         </div>
       </div>
