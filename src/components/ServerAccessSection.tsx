@@ -1,7 +1,7 @@
 
 import { toast } from "sonner";
 import { useRef, useEffect } from "react";
-import { X, Discord } from "lucide-react";
+import { X, MessageSquare } from "lucide-react";
 
 const ServerAccessSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -81,7 +81,7 @@ const ServerAccessSection = () => {
                 className="flex items-center justify-center gap-2 bg-[#5865F2] hover:bg-[#4752C4] text-white py-3 px-6 rounded-md transition-all duration-300"
                 onClick={() => toast.success("Opening Discord server")}
               >
-                <Discord className="h-5 w-5" /> Join Discord Server
+                <MessageSquare className="h-5 w-5" /> Join Discord Server
               </a>
             </div>
           </div>
