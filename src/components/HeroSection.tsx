@@ -1,4 +1,3 @@
-
 import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
@@ -18,7 +17,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 opacity-0 animate-fade-in-up animate-delay-300">
-            I'm Ev Trades — <span className="highlight">$50K+</span> in payouts, <span className="highlight">14K</span> followers on X, and <span className="highlight">5+</span> years trading experience.
+            I'm <a href="https://x.com/ev_trades" target="_blank" rel="noopener noreferrer" className="animated-underline">Ev Trades</a> — <span className="highlight">$50K+</span> in payouts, <span className="highlight">14K</span> followers on X, and <span className="highlight">5+</span> years trading experience.
           </p>
           
           <div className="mt-10 opacity-0 animate-fade-in-up animate-delay-600">
