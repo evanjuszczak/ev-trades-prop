@@ -25,6 +25,8 @@ const GetStartedSteps = () => {
   const stepsRef = useRef<Array<HTMLDivElement | null>>([]);
   const buttonRef = useRef<HTMLAnchorElement | null>(null);
   
+  const referralLink = "https://www.hyrotrader.com/start-trading/?coupon=ykzal6f&src=ChallengeBuy";
+  
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -109,13 +111,10 @@ const GetStartedSteps = () => {
         <div className="text-center">
           <a
             ref={buttonRef}
-            href="#" 
+            href={referralLink}
             className="btn-primary text-lg inline-flex items-center gap-2"
-            onClick={(e) => {
-              e.preventDefault();
-              // Replace with actual affiliate link
-              window.open('https://hyrotrader.com', '_blank');
-            }}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Get Funded Now
             <ArrowRight className="h-5 w-5" />

@@ -72,14 +72,14 @@ const TrustSection = () => {
           </div>
           
           <div 
-            className="bg-evtrades-grey dark:bg-evtrades-darkgrey rounded-lg overflow-hidden shadow-lg h-80 flex items-center justify-center"
+            className="bg-evtrades-grey dark:bg-evtrades-darkgrey rounded-lg overflow-hidden shadow-lg h-auto flex items-center justify-center"
             ref={el => elementsRef.current[3] = el}
           >
-            <div className="text-center p-6">
-              <div className="text-6xl mb-4">💰</div>
-              <p className="text-lg font-medium">Payout Proof</p>
-              <p className="text-sm text-muted-foreground">(Screenshot placeholder)</p>
-            </div>
+            <img 
+              src="/lovable-uploads/40b3356d-1de9-41ab-9fe9-2afc009fe2f5.png" 
+              alt="HyroTrader Payout Certificate for Evan Juszczak showing $949 total profit" 
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
