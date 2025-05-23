@@ -2,7 +2,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const FAQSection = () => {
   return (
-    <section id="faq" className="container-section bg-muted">
+    <section id="faq" className="container-section bg-background">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
           HyroTrader Discount Code FAQ
@@ -13,23 +13,23 @@ const FAQSection = () => {
         </p>
         
         <Accordion type="single" collapsible className="w-full space-y-4">
-          <AccordionItem value="item-1" className="bg-white rounded-lg shadow-sm border border-border">
-            <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-accent rounded-t-lg">
+          <AccordionItem value="item-1" className="bg-white dark:bg-primary rounded-lg shadow-md border-2 border-border">
+            <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-accent/50 rounded-t-lg text-left">
               <h3 className="text-left text-lg font-medium">What is the HyroTrader discount code?</h3>
             </AccordionTrigger>
-            <AccordionContent className="px-6 py-4 text-muted-foreground">
+            <AccordionContent className="px-6 py-4 text-foreground">
               <p>The official HyroTrader discount code is <strong className="text-evtrades-gold">YKZAL6F</strong>. Using this code will give you 5% off any trading challenge at HyroTrader. This code has been verified and is active in 2025.</p>
             </AccordionContent>
           </AccordionItem>
           
-          <AccordionItem value="item-2" className="bg-white rounded-lg shadow-sm border border-border">
-            <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-accent rounded-t-lg">
+          <AccordionItem value="item-2" className="bg-white dark:bg-primary rounded-lg shadow-md border-2 border-border">
+            <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-accent/50 rounded-t-lg text-left">
               <h3 className="text-left text-lg font-medium">How do I use HyroTrader code YKZAL6F?</h3>
             </AccordionTrigger>
-            <AccordionContent className="px-6 py-4 text-muted-foreground">
+            <AccordionContent className="px-6 py-4 text-foreground">
               <p>To use the HyroTrader discount code YKZAL6F:</p>
               <ol className="list-decimal ml-6 mt-2 space-y-1">
-                <li>Visit the <a href="https://app.hyrotrader.com/register/" target="_blank" rel="noopener noreferrer" className="text-evtrades-blue underline">HyroTrader registration page</a></li>
+                <li>Visit the <a href="https://app.hyrotrader.com/register/" target="_blank" rel="noopener noreferrer" className="text-evtrades-blue dark:text-evtrades-gold underline font-medium">HyroTrader registration page</a></li>
                 <li>Select your preferred trading challenge</li>
                 <li>Enter code <strong className="text-evtrades-gold">YKZAL6F</strong> in the coupon field at checkout</li>
                 <li>The 5% discount will be applied automatically to your order</li>
@@ -37,30 +37,30 @@ const FAQSection = () => {
             </AccordionContent>
           </AccordionItem>
           
-          <AccordionItem value="item-3" className="bg-white rounded-lg shadow-sm border border-border">
-            <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-accent rounded-t-lg">
+          <AccordionItem value="item-3" className="bg-white dark:bg-primary rounded-lg shadow-md border-2 border-border">
+            <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-accent/50 rounded-t-lg text-left">
               <h3 className="text-left text-lg font-medium">Who is Ev Trades?</h3>
             </AccordionTrigger>
-            <AccordionContent className="px-6 py-4 text-muted-foreground">
+            <AccordionContent className="px-6 py-4 text-foreground">
               <p>Ev Trades is a successful Forex trader with over $50,000 in payouts from prop firms, more than 14,000 followers on X (Twitter), and 5+ years of trading experience. I provide this exclusive HyroTrader discount code to help other traders get funded.</p>
-              <p className="mt-2">Follow me on <a href="https://x.com/ev_trades" target="_blank" rel="noopener noreferrer" className="text-evtrades-blue underline">X (Twitter)</a> or <a href="https://www.instagram.com/ev_trades" target="_blank" rel="noopener noreferrer" className="text-evtrades-blue underline">Instagram</a> for trading insights and proof of my HyroTrader payouts.</p>
+              <p className="mt-2">Follow me on <a href="https://x.com/ev_trades" target="_blank" rel="noopener noreferrer" className="text-evtrades-blue dark:text-evtrades-gold underline font-medium">X (Twitter)</a> or <a href="https://www.instagram.com/ev_trades" target="_blank" rel="noopener noreferrer" className="text-evtrades-blue dark:text-evtrades-gold underline font-medium">Instagram</a> for trading insights and proof of my HyroTrader payouts.</p>
             </AccordionContent>
           </AccordionItem>
           
-          <AccordionItem value="item-4" className="bg-white rounded-lg shadow-sm border border-border">
-            <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-accent rounded-t-lg">
+          <AccordionItem value="item-4" className="bg-white dark:bg-primary rounded-lg shadow-md border-2 border-border">
+            <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-accent/50 rounded-t-lg text-left">
               <h3 className="text-left text-lg font-medium">Is the code YKZAL6F still working in 2025?</h3>
             </AccordionTrigger>
-            <AccordionContent className="px-6 py-4 text-muted-foreground">
-              <p>Yes, the HyroTrader discount code YKZAL6F is valid and working throughout 2025. This is an evergreen code provided by HyroTrader for my followers. If you experience any issues with the code, please contact me directly via <a href="https://x.com/ev_trades" target="_blank" rel="noopener noreferrer" className="text-evtrades-blue underline">X (Twitter)</a>.</p>
+            <AccordionContent className="px-6 py-4 text-foreground">
+              <p>Yes, the HyroTrader discount code YKZAL6F is valid and working throughout 2025. This is an evergreen code provided by HyroTrader for my followers. If you experience any issues with the code, please contact me directly via <a href="https://x.com/ev_trades" target="_blank" rel="noopener noreferrer" className="text-evtrades-blue dark:text-evtrades-gold underline font-medium">X (Twitter)</a>.</p>
             </AccordionContent>
           </AccordionItem>
           
-          <AccordionItem value="item-5" className="bg-white rounded-lg shadow-sm border border-border">
-            <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-accent rounded-t-lg">
+          <AccordionItem value="item-5" className="bg-white dark:bg-primary rounded-lg shadow-md border-2 border-border">
+            <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-accent/50 rounded-t-lg text-left">
               <h3 className="text-left text-lg font-medium">Why should I choose HyroTrader?</h3>
             </AccordionTrigger>
-            <AccordionContent className="px-6 py-4 text-muted-foreground">
+            <AccordionContent className="px-6 py-4 text-foreground">
               <p>HyroTrader is a leading prop trading firm that offers excellent trading conditions, fair evaluation processes, and reliable payouts. Key benefits include:</p>
               <ul className="list-disc ml-6 mt-2 space-y-1">
                 <li>Competitive account sizes and reasonable profit targets</li>
@@ -78,7 +78,7 @@ const FAQSection = () => {
             href="https://app.hyrotrader.com/register/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="btn-primary inline-flex items-center justify-center gap-2"
+            className="btn-primary inline-flex items-center justify-center gap-2 py-3 px-8 text-lg"
             data-utm-source="faq_cta"
           >
             Get 5% Off with Code YKZAL6F
