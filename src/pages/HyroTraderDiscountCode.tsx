@@ -117,11 +117,11 @@ const HyroTraderDiscountCode = () => {
             
             <p>Here's a screenshot of my most recent checkout using the code:</p>
             
-            <img src="./Discounts.png" alt="HyroTrader Discount Screenshot" className="rounded-lg shadow-md my-4 max-w-full" />
+            <img src="/Discounts.png" alt="HyroTrader Discount Screenshot" className="rounded-lg shadow-md my-4 max-w-full" />
             
             <p>And here's one of my recent payouts:</p>
             
-            <img src="./temp.png" alt="HyroTrader Payout" className="rounded-lg shadow-md my-4 max-w-full" />
+            <img src="/temp.png" alt="HyroTrader Payout" className="rounded-lg shadow-md my-4 max-w-full" />
             
             <blockquote className="bg-primary/10 border-l-4 border-evtrades-gold p-4 my-6 rounded-lg">
               <p><strong>Code:</strong> YKZAL6F</p>
