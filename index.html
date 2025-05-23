@@ -24,6 +24,18 @@
     <!-- Adding the missing itemprop="image" meta tag -->
     <meta itemprop="image" content="/gra.png" />
     
+    <!-- Script to dynamically update OG URL based on current path -->
+    <script type="text/javascript">
+      (function() {
+        const baseUrl = "https://prop.evtrades.com";
+        const ogUrl = document.querySelector('meta[property="og:url"]');
+        if (ogUrl) {
+          const currentPath = window.location.pathname;
+          ogUrl.setAttribute("content", baseUrl + currentPath);
+        }
+      })();
+    </script>
+
     <!-- GitHub Pages SPA redirect -->
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages

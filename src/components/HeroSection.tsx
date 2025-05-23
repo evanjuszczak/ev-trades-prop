@@ -28,7 +28,7 @@ const HeroSection = () => {
           
           <div className="mt-10 opacity-0 animate-fade-in-up animate-delay-600">
             <a 
-              href="https://app.hyrotrader.com/register/"
+              href="https://www.hyrotrader.com/start-trading/?coupon=ykzal6f&src=ChallengeBuy"
               target="_blank" 
               rel="noopener noreferrer"
               className="btn-primary inline-flex items-center gap-2 text-lg"
