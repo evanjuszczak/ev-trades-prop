@@ -117,11 +117,11 @@ const HyroTraderDiscountCode = () => {
             
             <p>Here's a screenshot of my most recent checkout using the code:</p>
             
-            <img src="/temp.png" alt="HyroTrader Discount Screenshot" className="rounded-lg shadow-md my-4 max-w-full" />
+            <img src="/Discounts.png" alt="HyroTrader Discount Screenshot" className="rounded-lg shadow-md my-4 max-w-full" />
             
             <p>And here's one of my recent payouts:</p>
             
-            <img src="/gra.png" alt="HyroTrader Payout" className="rounded-lg shadow-md my-4 max-w-full" />
+            <img src="/temp.png" alt="HyroTrader Payout" className="rounded-lg shadow-md my-4 max-w-full" />
             
             <blockquote className="bg-primary/10 border-l-4 border-evtrades-gold p-4 my-6 rounded-lg">
               <p><strong>Code:</strong> YKZAL6F</p>
@@ -149,9 +149,9 @@ const HyroTraderDiscountCode = () => {
             <p>If you're browsing multiple prop firms, here are some other active codes:</p>
             
             <ul className="list-disc pl-6 space-y-2 mb-6">
-              <li><strong>FundedNext – 5% off:</strong> CODEFN5</li>
-              <li><strong>E8 Funding – 10% off:</strong> E8XTRA</li>
-              <li><strong>The Funded Trader – 5% off:</strong> TFTKING</li>
+              <li><strong><u><a href="https://app.fundingpips.com/register?ref=707d9c1e" target="_blank" rel="noopener noreferrer">Funding Pips</a></u> – 5% off:</strong> 707D9C1E</li>
+              <li><strong><u><a href="https://checkout.aquafunded.com/ref/1856/" target="_blank" rel="noopener noreferrer">Aqua Funded</a></u> – 50% off:</strong> AQUA</li>
+              <li><strong><u><a href="https://brightfunded.com?affiliateId=LXuROIC3Ss-CZO2aKJ3NnA" target="_blank" rel="noopener noreferrer">BrightFunded</a></u> – 20% off:</strong> MAY30</li>
             </ul>
             
             <hr className="my-8 border-muted" />
