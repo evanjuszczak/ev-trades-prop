@@ -2,7 +2,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useRef, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 
-const TrustSection = () => {
+interface TrustSectionProps {
+  id?: string;
+}
+
+const TrustSection = ({ id = "about" }: TrustSectionProps) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const elementsRef = useRef<Array<HTMLElement | null>>([]);
   
@@ -34,7 +38,7 @@ const TrustSection = () => {
   }, []);
   
   return (
-    <section id="about" className="container-section" ref={sectionRef}>
+    <section id={id} className="container-section" ref={sectionRef}>
       <div className="max-w-4xl mx-auto">
         <h2 
           className="text-3xl md:text-4xl font-bold text-center mb-12"

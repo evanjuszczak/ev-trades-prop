@@ -13,32 +13,47 @@ const HeroSection = () => {
       <div className="container-section relative z-10 text-white">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 opacity-0 animate-fade-in-up">
-            Get Funded with HyroTrader – <span className="text-evtrades-gold">Save 5% Instantly</span>
+            HyroTrader Discount Code – <span className="text-evtrades-gold">YKZAL6F (5% Off)</span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 opacity-0 animate-fade-in-up animate-delay-300">
             I'm <a href="https://x.com/ev_trades" target="_blank" rel="noopener noreferrer" className="animated-underline">Ev Trades</a> — <span className="highlight">$50K+</span> in payouts, <span className="highlight">14K</span> followers on X, and <span className="highlight">5+</span> years trading experience.
           </p>
           
+          <div className="mt-6 opacity-0 animate-fade-in-up animate-delay-300">
+            <p className="text-lg mb-4">
+              Use my exclusive HyroTrader promo code <span className="discount-code">YKZAL6F</span> to save 5% on any trading challenge. This verified discount code works in 2025 for all HyroTrader accounts.
+            </p>
+          </div>
+          
           <div className="mt-10 opacity-0 animate-fade-in-up animate-delay-600">
             <a 
-              href="#get-started" 
+              href="https://app.hyrotrader.com/register/"
+              target="_blank" 
+              rel="noopener noreferrer"
               className="btn-primary inline-flex items-center gap-2 text-lg"
+              data-utm-source="hero_button"
             >
-              Claim My Discount & Get Funded
+              Claim 5% Discount with Code YKZAL6F
               <ArrowRight className="h-5 w-5" />
             </a>
             
             <div className="mt-6 text-sm text-white/80">
-              Use code <span className="discount-code">YKZAL6F</span> at checkout
+              Enter code <span className="discount-code">YKZAL6F</span> at checkout
             </div>
+          </div>
+          
+          <div className="mt-8 text-sm opacity-0 animate-fade-in-up animate-delay-900">
+            <a href="#benefits" className="text-white/80 hover:text-white mx-2">Benefits</a>
+            <a href="#trusted-trader" className="text-white/80 hover:text-white mx-2">Proof of Payouts</a>
+            <a href="#faq" className="text-white/80 hover:text-white mx-2">HyroTrader FAQ</a>
           </div>
         </div>
       </div>
       
       {/* Wave decoration at bottom */}
       <div className="absolute bottom-0 left-0 w-full">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="w-full">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="w-full" aria-hidden="true">
           <path 
             fill="currentColor" 
             fillOpacity="1" 

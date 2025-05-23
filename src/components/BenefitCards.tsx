@@ -1,5 +1,4 @@
-
-import { DollarSign, Clock, CheckCircle } from "lucide-react";
+import { DollarSign, Clock, CheckCircle, Award, ArrowRight } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useRef, useEffect } from "react";
 
@@ -15,13 +14,22 @@ const benefits = [
     icon: CheckCircle,
   },
   {
-    title: "Best Discount",
-    description: "Save 5% instantly when you use my exclusive code YKZAL6F at checkout.",
+    title: "Exclusive 5% Discount",
+    description: "Save 5% instantly when you use my discount code YKZAL6F at checkout on any HyroTrader challenge.",
     icon: DollarSign,
   },
+  {
+    title: "Verified Results",
+    description: "I've personally earned over $50,000 in payouts using the same HyroTrader accounts available to you.",
+    icon: Award,
+  }
 ];
 
-const BenefitCards = () => {
+interface BenefitCardsProps {
+  id?: string;
+}
+
+const BenefitCards = ({ id = "benefits" }: BenefitCardsProps) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<Array<HTMLDivElement | null>>([]);
   
@@ -55,17 +63,17 @@ const BenefitCards = () => {
   }, []);
   
   return (
-    <section id="benefits" className="container-section bg-accent/50">
+    <section id={id} className="container-section bg-accent/50">
       <div ref={sectionRef} className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          Why HyroTrader
+          Benefits of Using HyroTrader Discount Code
         </h2>
         
         <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">
-          Take your trading to the next level with a prop firm that actually puts traders first
+          Get the most out of your trading journey with code <span className="font-bold text-evtrades-gold">YKZAL6F</span> for 5% off any HyroTrader challenge
         </p>
         
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {benefits.map((benefit, index) => (
             <Card 
               key={index}
@@ -85,6 +93,18 @@ const BenefitCards = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+        
+        <div className="mt-12 text-center">
+          <a 
+            href="https://app.hyrotrader.com/register/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn-secondary inline-flex items-center gap-2 px-10"
+            data-utm-source="benefits_cta"
+          >
+            Use Code YKZAL6F <ArrowRight className="h-4 w-4" />
+          </a>
         </div>
       </div>
     </section>
